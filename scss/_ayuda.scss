@@ -1,0 +1,345 @@
+/*---Variables---*/
+$font: 'Poppins', sans-serif;
+$fontw-900: 900;
+$fontw-800: 800;
+$fontw-700: 700;
+$fontw-600: 600;
+$fontw-500: 500;
+$fontw-400: 400;
+$colorvl: #672C82;
+$colorcl: #0084FF;
+$colornj: #FF8400;
+$colorbc: #FFFFFF;
+$colorgr: #343348;
+$colorft: #6c757d;
+$lettersp1: 1px;
+$lettersp2: $lettersp1 + 1px;
+$bordesred: 10px;
+$bordebf: 1.5px solid $colornj;
+
+/*---ID:Ayuda---*/
+
+#Ayuda {
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.preguntas {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	margin-top: 20%;
+	margin-bottom: 10%;
+
+    .preguntas__titulo {
+        font-size: 30px;
+        font-weight: $fontw-700;
+        color: $colorgr;
+        padding-bottom: 25px;
+        width: 100vh;
+        text-align: center;
+    }
+
+    .preguntas__parrafo {
+        font-size: 18px;
+        color: $colorgr;
+        text-align: center;
+    }
+
+    .mensaje__cta {
+	    padding-top: 2%;
+        width: 100vh;
+        text-align: center;
+    
+        .btn-primary {
+            font-weight: $fontw-500;
+            font-size: 17px;
+            padding-left: 3%;
+            padding-right: 3%;
+            background-color: $colorcl;
+            border-color: $colorcl;
+    
+            a {
+                color: $colorbc !important;
+                text-decoration: none !important;
+            }
+        }
+        
+        .btn-primary:hover {
+            background-color: $colornj;
+            border-color: $colornj;
+        }
+    }
+}
+
+/*-------------Preguntas Frecuentes / Ayuda.html-------------*/
+
+nav {
+    height: 75px !important;
+
+    .breadcrumb {
+        padding-left: 3%;
+        padding-top: 2%;
+
+        .breadcrumb-item {
+            font-size: 13px;
+            font-weight: 200;
+        
+            a{
+                text-decoration: none !important;
+                color: $colorcl;
+            }
+        }
+
+        .active {
+            font-weight: 400;
+        }
+    }
+}
+
+.tituloAyuda {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: $fontw-800;
+    letter-spacing: $lettersp2;
+    display: flex;
+    justify-content: center;
+    background-color: $colornj;
+    color: $colorbc;
+    margin-left: 0;
+    padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+/*---Acordion----*/
+.container {
+	width: 100vh;
+    padding-bottom: 3%;
+    padding-top: 3%;
+
+
+    .accordion-item{
+        font-family: $font;
+        font-size: 14px;
+        font-weight: 100;
+        color: $colorgr;
+    }
+}
+
+.accordion-button:not(.collapsed){
+	color: $colorbc;
+	background-color: $colorcl;
+}
+
+.accordion-header {
+
+    button{
+        font-weight: $fontw-500;
+        color: $colorcl;
+    }
+}
+
+/*---Cards Group----*/
+
+.card {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+
+    .card-body {
+        padding-left: 10%;
+
+        .card-icon {
+            width: 55px;
+            margin-bottom: 6%;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: $fontw-600;
+            color: $colorgr;
+            margin-bottom: 5%;
+        }
+    
+        .card-text {
+            font-size: 13px;
+            font-weight: 200;
+            color: $colorgr;
+            line-height: 1.7;
+        }
+    }
+}
+
+
+/*---Cards----*/
+.bloque {
+	margin: 10px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1300px;
+	bottom: 140px;
+	left: 250px;
+    padding-top: 7%;
+
+    .bloque__cuadrado--1, .bloque__cuadrado--2, .bloque__cuadrado--3 {
+        background: $colorbc;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: $bordesred;
+        margin: 25px;
+        width: 300px;
+    }
+
+    @for $i from 1 through 3 {
+
+        .bloque__cuadrado--#{$i} { height: 100px * $i; }
+        .bloque__cuadrado--#{$i} { padding: 30px * $i; }
+    }
+    
+    .bloque__contenido {
+        width: 300px;
+        height: 70px;
+        border-radius: $bordesred;
+        padding-left: 5%;
+        padding-top: 7%;
+
+        .bloque__titular {
+            font-size: 16px;
+            font-weight: $fontw-700;
+            letter-spacing: $lettersp1;
+            text-transform: uppercase;
+            color: $colorgr;
+        }
+    }
+
+    .bloque__parrafo {
+        font-size: 13px;
+        font-weight: $fontw-500;
+        color: $colorgr;
+        padding-left: 5%;
+    }
+
+    $parrafo-color: (1: $colorcl, 2: $colornj);
+
+    $paddingtop1: 10%;
+    $paddingtop2: 55%;
+    $parrafo-pad: (1: $paddingtop1, 2: $paddingtop2);
+
+    @each $numero, $color in $parrafo-color {
+        .bloque__parrafo--#{$numero} {
+            color: $color;
+            font-size: 13px;
+            font-weight: $fontw-400;
+        }
+    }
+
+    @each $numero, $padding in $parrafo-pad {
+        .bloque__parrafo--#{$numero} {
+            padding-top: $padding;
+        }
+    }
+}
+
+.Volver {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+    padding-bottom: 10%;
+
+    .IrHome {
+        font-size: 12px;
+        margin-right: 9%;
+        margin-top: 4%;
+
+        a{
+            text-decoration: none;
+            color: $colorft;
+        }
+
+        a:hover{
+            color: $colorbc;
+        }
+    }
+}
+
+/*---Footer---*/
+
+.footerContenedor {
+	width: auto;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-left: 10%;
+	margin-top: 5%;
+
+	.columna {
+
+		.columna__lista {
+			width: 300px;
+			margin-left: 2%;
+			flex-wrap: wrap;
+			display: flex;
+			flex-direction: column;
+
+			.columna__titulo {
+				font-size: 15px;
+				font-weight: $fontw-600;
+				color: $colorft;
+			}
+	
+			.columna__item {
+				font-size: 12px;
+				font-weight: 300;
+				padding: 4% 8% 4% 8%;	
+				color: $colorft;
+				list-style: none;
+	
+				.columna__item--link {
+					text-decoration: none;
+					color: $colorft;
+				}
+
+			}
+	
+			.columna__item--usuarios{
+				padding-top: 0;
+				list-style: none;
+			}
+		}
+
+		.columna__lista--redes {
+			display: flex;
+			flex-direction: row;
+
+			.columna__item {
+				padding: 0 10% 0 10%;
+				margin-left: 10%;
+				list-style: none;
+
+
+				@each $rrss in facebook, instagram, twitter {
+					.#{$rrss}__icon {
+						content: url("../icon/#{$rrss}.svg");
+						width: 32px;
+					}
+
+					.#{$rrss}__icon:hover {
+						content: url("../icon/#{$rrss}hover.svg");
+						width: 32px;
+					}
+				}
+			}
+		}	
+	}
+}
+
+footer {
+
+	.footer__parrafo {
+		font-size: 10px;
+		font-weight: 100;
+		margin-top: 4%;
+		margin-bottom: 4%;
+		text-align: center;
+		color: $colorgr;
+	}
+}

@@ -1,0 +1,402 @@
+@import "nosotros";
+@import "beneficios";
+@import "ayuda";
+@import "tarjeta";
+@import "contacto";
+
+
+/*---Variables---*/
+$font: 'Poppins', sans-serif;
+$fontw-900: 900;
+$fontw-800: 800;
+$fontw-700: 700;
+$fontw-600: 600;
+$fontw-500: 500;
+$fontw-400: 400;
+$colorvl: #672C82;
+$colorcl: #0084FF;
+$colornj: #FF8400;
+$colorbc: #FFFFFF;
+$colorgr: #343348;
+$colorft: #6c757d;
+$lettersp1: 1px;
+$lettersp2: $lettersp1 + 1px;
+
+
+/*---Generales Home---*/
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	font-family: $font;
+}
+
+body {
+	font-family: $font;
+}
+
+/*---Menú---*/
+
+nav {
+	height: 150px;
+	font-family: $font;
+	margin-bottom: 2%;
+
+	.tituloNavegacion {
+		color: $colorcl;
+		font-weight: $fontw-800;
+		float: left;
+		padding-top: 2%;
+		padding-left: 5%;
+		font-size: 27px;
+	}
+
+	.tituloNavegacion:hover{
+		transform: rotate(-15deg);
+		animation-duration: 2s;
+		animation-name: animacion;
+	}
+
+	@keyframes animacion {
+		from {
+		}
+		to {
+			transform: skewY(0deg);
+		}
+	}
+}
+
+.nav-link:hover {
+	color: $colorcl !important;
+}
+
+.bg-light {
+	background-color: $colorbc !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	font-size: 15px;
+	font-weight: $fontw-700;
+	letter-spacing: $lettersp1;
+	color: $colornj;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.navbar-nav {
+	padding-left: 25%;
+	padding-top: 1.5%;
+
+	.dropdown-menu {
+		background-color: $colorcl;
+		border: $colorcl;
+		width: 200px;	
+	}
+
+	.dropdown-item {
+		font-size: 15px;
+		font-weight: $fontw-400;
+		color: $colorbc;
+		text-align: center;
+		width: auto;
+		text-transform: uppercase;
+	}
+
+	.dropdown-item:hover {
+		background-color: $colornj;
+		font-weight: $fontw-600;
+	}
+}
+
+/*---Bajada---*/
+
+.mensaje {
+	width: 70vh;
+	height: 0px;
+	padding-left: 19%;
+
+	.mensaje__antetitulo {
+		font-weight: $fontw-500;
+		font-size: 22px;
+		text-align: left;
+		padding-top: 21%;
+		letter-spacing: $lettersp1;
+		color: $colorgr;
+	}
+
+	.mensaje__titulo {
+		font-weight: $fontw-900;
+		font-size: 70px;
+		letter-spacing: $lettersp1;
+		text-align: left;
+		padding-bottom: 16px;
+		line-height: 1.3;
+	}
+
+	.mensaje__subtitulo {
+		font-weight: 200;
+		font-size: 16px;
+		text-align: left;
+		padding-bottom: 10px;
+		color: $colorgr;
+	}
+}
+
+.mensaje__cta{
+	padding-top: 2%;
+
+	.btn-primary {
+		font-weight: $fontw-600;
+		font-size: 17px;
+		padding-right: 3%;
+		padding-left: 3%;
+		background-color: $colorcl;
+		border-color: $colorcl;
+
+		a {
+			color: $colorbc !important;
+			text-decoration: none !important;
+		}
+	}
+	
+	.btn-primary:hover {
+		background-color: $colornj;
+		border-color: $colornj;
+	}
+}
+
+.visual {
+	width: 100vh;
+	display: flex;
+	
+	.visual__img {
+		position: relative;
+		left: 270px;
+		top: 0px;
+		z-index: -1;
+		width: 550px;
+		height: auto;
+		margin-left: 65%;
+		margin-top: 2%;
+		margin-bottom: 10%;
+	}
+}
+
+/*---ID:Introduccion---*/
+$colorbg-vl: #672C82;
+
+.intro {
+	background-color: $colorbg-vl;
+	height: 400px;
+	margin-bottom: 60px;
+
+	.intro__titulo {
+
+		@if $colorbg-vl == #672C82 {
+			color: $colorbc;
+			font-size: 55px;
+			font-weight: $fontw-600;
+			text-align: center;
+			padding-top: 7%;
+			padding-bottom: 3%;
+			letter-spacing: $lettersp1;
+		} 
+		
+		@else if $colorbg-vl == #FF8400 {
+			color: $colorgr;
+			font-size: 55px;
+			font-weight: $fontw-400;
+			text-align: center;
+			padding-top: 115px;
+			letter-spacing: $lettersp1;
+		} 
+	   
+		@else {
+			color: black;
+			font-size: 55px;
+			font-weight: $fontw-500;
+			text-align: center;
+			padding-top: 115px;
+			letter-spacing: $lettersp1;
+		}
+	}
+
+	.intro__parrafo {
+
+		@if $colorbg-vl == #672C82 {
+			color: $colorbc;
+			font-size: 20px;
+			text-align: center;
+			letter-spacing: $lettersp1;
+		} 
+		
+		@else if $colorbg-vl == #FF8400 {
+			color: black;
+			font-size: 20px;
+			text-align: center;
+			letter-spacing: $lettersp1;
+		} 
+	   
+		@else if $colorbg-vl == #0084FF {
+			color: $colorbc;
+			font-size: 20px;
+			text-align: center;
+			letter-spacing: $lettersp1;
+		} 
+	   
+		@else {
+			color: black;
+		}
+	}
+}
+
+
+/*---Footer---*/
+
+.footerContenedor {
+	width: auto;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-left: 10%;
+	margin-top: 5%;
+
+	.columna {
+
+		.columna__lista {
+			width: 300px;
+			margin-left: 2%;
+			flex-wrap: wrap;
+			display: flex;
+			flex-direction: column;
+
+			.columna__titulo {
+				font-size: 15px;
+				font-weight: $fontw-600;
+				color: $colorft;
+			}
+	
+			.columna__item {
+				font-size: 12px;
+				font-weight: 300;
+				padding: 4% 8% 4% 8%;	
+				color: $colorft;
+				list-style: none;
+	
+				.columna__item--link {
+					text-decoration: none;
+					color: $colorft;
+				}
+
+			}
+	
+			.columna__item--usuarios{
+				padding-top: 0;
+				list-style: none;
+			}
+		}
+
+		.columna__lista--redes {
+			display: flex;
+			flex-direction: row;
+
+			.columna__item {
+				padding: 0 10% 0 10%;
+				margin-left: 10%;
+				list-style: none;
+
+
+				@each $rrss in facebook, instagram, twitter {
+					.#{$rrss}__icon {
+						content: url("../icon/#{$rrss}.svg");
+						width: 32px;
+					}
+
+					.#{$rrss}__icon:hover {
+						content: url("../icon/#{$rrss}hover.svg");
+						width: 32px;
+					}
+				}
+			}
+		}	
+	}
+}
+
+footer {
+
+	.footer__parrafo {
+		font-size: 10px;
+		font-weight: 100;
+		margin-top: 4%;
+		margin-bottom: 4%;
+		text-align: center;
+		color: $colorgr;
+	}
+}
+
+
+/*---Error 404---*/
+
+.Error {
+	display: flex;
+	position: relative;
+
+    img {
+        width: 100%;
+		z-index: -1;
+    }
+}
+
+.mensaje__error {
+	width: 80vh;
+	height: 0px;
+	padding-left: 5%;
+
+	.mensaje__error--titulo {
+		font-weight: $fontw-800;
+		font-size: 60px;
+		letter-spacing: $lettersp1;
+		text-align: left;
+		padding-top: 15%;
+		padding-bottom: 2%;
+		line-height: 1.3;
+		color: #FFFFFF;
+	}
+
+	.mensaje__error--subtitulo {
+		font-weight: 400;
+		font-size: 16px;
+		text-align: left;
+		padding-bottom: 10px;
+		color: #FFFFFF;
+	}
+}
+
+.mensaje__error--boton{
+	padding-top: 2%;
+	position: relative;
+	z-index: 1;
+
+	.btn-primary {
+		font-weight: $fontw-600;
+		font-size: 17px;
+		padding-right: 3%;
+		padding-left: 3%;
+		background-color: $colorcl;
+		border-color: $colorbc;
+
+		a {
+			color: $colorbc !important;
+			text-decoration: none !important;
+		}
+	}
+	
+	.btn-primary:hover {
+		background-color: $colornj;
+		border-color: $colornj;
+	}
+}

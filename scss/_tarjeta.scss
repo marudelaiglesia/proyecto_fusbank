@@ -1,0 +1,66 @@
+/*---Variables---*/
+$font: 'Poppins', sans-serif;
+$fontw-900: 900;
+$fontw-800: 800;
+$fontw-700: 700;
+$fontw-600: 600;
+$fontw-500: 500;
+$fontw-400: 400;
+$colorvl: #672C82;
+$colorcl: #0084FF;
+$colornj: #FF8400;
+$colorbc: #FFFFFF;
+$colorgr: #343348;
+$colorft: #6c757d;
+$lettersp1: 1px;
+$lettersp2: $lettersp1 + 1px;
+$bordesred: 10px;
+$bordebf: 1.5px solid $colornj;
+
+
+/*---ID:Solicitar Tarjeta---*/
+
+#solicitarTarjeta {
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.tarjeta {
+
+    .tarjeta__contenedor {
+        flex-wrap: nowrap;
+
+        .tarjeta__contenedor--izquierda {
+        
+            .tarjeta__titulo {
+                font-weight: $fontw-700;
+                font-size: 47px;
+                color: $colorcl;
+                padding-bottom: 2%;
+                padding-top: 35%;
+                margin-left: 4%;
+                line-height: 1.5;
+            }
+        
+            .tarjeta__parrafo {
+                font-size: 15px;
+                margin-left: 4%;
+            }
+        
+            .tarjeta__boton {
+                margin-left: 4%;
+                padding-top: 7%;
+                width: 170px;
+                padding-right: 0;
+            }
+        }
+
+        .tarjeta__contenedor--derecha {
+
+            .tarjeta__img{
+                height: 800px;
+                padding-top: 5%;
+            }
+        }
+    }  
+}

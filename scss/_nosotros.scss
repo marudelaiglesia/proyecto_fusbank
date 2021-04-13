@@ -1,0 +1,130 @@
+/*---Variables---*/
+$font: 'Poppins', sans-serif;
+$fontw-900: 900;
+$fontw-800: 800;
+$fontw-700: 700;
+$fontw-600: 600;
+$fontw-500: 500;
+$fontw-400: 400;
+$colorvl: #672C82;
+$colorcl: #0084FF;
+$colornj: #FF8400;
+$colorbc: #FFFFFF;
+$colorgr: #343348;
+$colorft: #6c757d;
+$lettersp1: 1px;
+$lettersp2: $lettersp1 + 1px;
+$bordesred: 10px;
+$bordebf: 1.5px solid $colornj;
+
+
+/*---ID:Nosotros / Quienes Somos---*/
+#Nosotros {
+	height: auto;
+	padding-bottom: 100px;
+	position: relative;
+
+    img {
+        width: 100%;
+    }
+}
+
+.nosotros {
+
+    .nosotros__titulo {
+	    font-size: 40px;
+	    font-weight: $fontw-800;
+	    position: relative;;
+	    bottom: 360px;
+	    text-align: center;
+        color: $colorvl;
+        padding-bottom: 3%;
+    }
+
+    .nosotros__titulo:hover{
+	    font-size: 40px;
+	    font-weight: $fontw-800;
+	    position: relative;
+	    bottom: 360px;
+    	text-align: center;
+    	color: $colornj;
+    	animation-duration: 2s;
+    	animation-name: aparecer;
+    }
+
+    @keyframes aparecer {
+	    0% {
+		    opacity: 0;
+	        }
+	    100% {
+	    	opacity: 1;
+	        }
+    }
+
+    .nosotros__parrafo {
+	    font-size: 17px;
+	    color: $colorgr;
+	    position: relative;
+	    bottom: 380px;
+	    text-align: center;
+    }
+}
+
+.cardsContenedor {
+	margin: 10px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1300px;
+	position: absolute;
+	bottom: 140px;
+	left: 250px;
+
+    .card {
+        background: $colorbc;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: $bordesred;
+        padding: 40px;
+        margin: 25px;
+        height: 120px;
+        width: 300px;
+
+        .card__rectangulo {
+            width: 300px;
+            height: 75px;
+            border-radius: $bordesred;
+            background-color: $colorcl;
+
+            .card__titulo {
+                font-size: 16px;
+                font-weight: $fontw-700;
+                padding-top: 25px;
+                text-align: center;
+                letter-spacing: $lettersp1;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $colorbc;
+            }
+        }
+
+        .card__parrafo {
+            font-size: 13px;
+            font-weight: $fontw-500;
+            padding-top: 20px;
+            text-align: center;
+            color: $colorcl;
+        }
+    }
+}
+
+.card__rectangulo:hover{
+    width: 300px;
+    height: 75px !important;
+    border-radius: $bordesred;
+    background-image: linear-gradient(160deg, $colorcl 0%, $colornj 100%);
+}
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+

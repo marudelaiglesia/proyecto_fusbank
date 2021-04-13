@@ -1,0 +1,128 @@
+/*---Variables---*/
+$font: 'Poppins', sans-serif;
+$fontw-900: 900;
+$fontw-800: 800;
+$fontw-700: 700;
+$fontw-600: 600;
+$fontw-500: 500;
+$fontw-400: 400;
+$colorvl: #672C82;
+$colorcl: #0084FF;
+$colornj: #FF8400;
+$colorbc: #FFFFFF;
+$colorgr: #343348;
+$colorft: #6c757d;
+$lettersp1: 1px;
+$lettersp2: $lettersp1 + 1px;
+$bordesred: 10px;
+$bordebf: 1.5px solid $colornj;
+
+
+/*---ID:Beneficios---*/
+
+#Beneficios {
+
+    .tituloBeneficios {
+        font-size: 50px;
+        font-weight: $fontw-800;
+        letter-spacing: $lettersp2;
+        display: flex;
+        justify-content: center;
+        background-color: $colorcl;
+        color: $colorbc;
+        margin-left: 0;
+        padding-top: 3%;
+		padding-bottom: 3%;
+    }
+
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2.5fr 2fr 3fr;
+        grid-template-areas: 
+        "cuenta mantenimiento mantenimiento"
+        "transferencia transferencia cajero"
+        "débito servicio cajero";
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        padding: 5% 15% 5% 15%;
+
+        .grilla__titulo {
+            margin: 30px 30px 25px 30px;
+            color: $colorcl;
+            font-size: 18px;
+            font-weight: $fontw-600;
+        }
+        
+        .grilla__detalle {
+            font-size: 13px;
+            margin: 0px 30px 0px 0px;
+            padding-left: 30px;
+        }
+
+        /*-Cuenta-*/
+        .grilla__celda--cuenta {
+            grid-area: cuenta;
+            border: $bordebf;
+            border-radius: $bordesred;
+            padding-bottom: 8%;
+        }
+
+        /*-Mantenimiento-*/
+        .grilla__celda--mantenimiento {
+            grid-area: mantenimiento;
+            border: $bordebf;
+            border-radius: $bordesred;
+        }
+        
+        /*-Transferencias-*/
+        .grilla__celda--transferencia {
+            grid-area: transferencia;
+            border: $bordebf;
+            border-radius: $bordesred;
+        }
+        
+        /*-Cajeros-*/
+        .grilla__celda--cajero {
+            grid-area: cajero;
+            border: $bordebf;
+            border-radius: $bordesred;
+        }
+
+        /*-Débitos-*/
+        .grilla__celda--débito {
+            grid-area: débito;
+            border: $bordebf;
+            border-radius: $bordesred;
+        }
+
+        /*-Servicios-*/
+        .grilla__celda--servicio {
+            grid-area: servicio;
+            border: $bordebf;
+            border-radius: $bordesred;
+        }
+    }
+
+    .grilla__icon {
+        margin: 23px 18px 10px 32px;
+        width: 36px;
+        float: left;
+    }
+
+    .grilla__icon:hover {
+        transform: rotate(-25deg);
+        animation-duration: 1s;
+        animation-name: animacion;
+    }
+    
+    @keyframes animacion {
+        from {
+        }
+        to {
+            transform: skewY(0deg);
+        }
+    }
+}
+
+

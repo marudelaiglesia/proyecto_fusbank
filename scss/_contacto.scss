@@ -1,0 +1,139 @@
+/*---Variables---*/
+$font: 'Poppins', sans-serif;
+$fontw-900: 900;
+$fontw-800: 800;
+$fontw-700: 700;
+$fontw-600: 600;
+$fontw-500: 500;
+$fontw-400: 400;
+$colorvl: #672C82;
+$colorcl: #0084FF;
+$colornj: #FF8400;
+$colorbc: #FFFFFF;
+$colorgr: #343348;
+$colorft: #6c757d;
+$lettersp1: 1px;
+$lettersp2: $lettersp1 + 1px;
+$bordesred: 10px;
+$bordebf: 1.5px solid $colornj;
+
+
+/*---ID:Contacto/Formulario---*/
+
+#Contacto { 
+	background-color: #F2F2F2;
+	padding: 70px 20px 100px 20px;
+
+    .Contactanos {
+        font-size: 28px !important;
+        font-weight: $fontw-700;
+        text-align: center;
+        margin: 0;
+        color: $colorcl;
+        padding-top: 3%;
+		padding-bottom: 3%;
+    }
+
+    .Formulario {
+        display: flex;
+        justify-content: center;
+        color: $colorgr;
+
+        .form-group {
+            margin-top: 2%;
+            margin-bottom: 7%;
+
+            label {
+                font-size: 14px;
+                font-weight: $fontw-500;
+                padding-bottom: 2%;
+                padding-left: 3%;
+                color: $colorcl;
+            }	
+
+            .form-control{
+                border: 1px solid $colorcl;
+                font-size: 14px;
+            }
+        }
+
+        .Asunto {
+            margin-bottom: 0.7%;
+        }
+
+        .form-select {
+            border: 1px solid $colorcl;
+            width: 95%;
+            font-size: 14px;
+            margin-bottom: 7%;
+        }
+
+        .form-check{
+            margin-top: 10%;
+
+            #flexCheckDefault{
+                border: 1px solid $colorcl;
+            }
+
+            .form-label {
+                padding-top: 10%;
+            }
+
+            .form-check-label {
+                font-size: 14px;
+                font-weight: $fontw-400;
+                margin-bottom: 2%;
+                margin-left: 1%;
+                color: #000;
+            }
+        }
+        
+        #flexSwitchCheckDefault {
+            border: 1px solid $colorcl;
+        }
+
+        .form-switch {
+            margin-top: 5%;
+            margin-bottom: 10%;
+        }
+        
+        .Botones {
+            padding-top: 5%;
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .btn-primary {
+                font-weight: $fontw-500;
+                font-size: 15px;
+                margin-right: 6%;
+                background-color: $colorcl;
+                border-color: $colorcl;
+            }
+            
+            .btn-primary:hover {
+                background-color: $colornj;
+                border-color: $colornj;
+            }
+            
+            .btn-secondary {
+                font-weight: $fontw-500;
+                font-size: 15px;
+                background-color: $colorbc;
+                color: $colorft;
+            }
+            
+            .btn-secondary:hover {
+                background-color: $colorft;
+                border-color: $colorft;
+                color: $colorbc;
+            }
+        }
+    }
+}
+	
+	
+
+
+
