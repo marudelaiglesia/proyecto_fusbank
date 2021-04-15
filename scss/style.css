@@ -127,6 +127,53 @@
           box-sizing: content-box;
 }
 
+/*---Sección: Equipo---*/
+#nuestroEquipo {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background-color: #0084FF;
+}
+
+.container {
+  margin-left: 15%;
+}
+
+.equipo .equipo__contenedor {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.equipo .equipo__contenedor .equipo__contenedor--izquierda .equipo__titulo {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+  padding-bottom: 4%;
+  padding-top: 18%;
+  margin-left: 3%;
+  line-height: 1.3;
+}
+
+.equipo .equipo__contenedor .equipo__contenedor--izquierda .equipo__parrafo {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 18%;
+  padding-top: 2.3%;
+  padding-bottom: 2%;
+  color: #FFFFFF;
+}
+
+.equipo .equipo__contenedor .equipo__contenedor--izquierda .equipo__icono {
+  margin-left: 10%;
+  padding-top: 1.5%;
+  width: 36px;
+  float: left;
+}
+
+.equipo .equipo__contenedor .equipo__contenedor--derecha .equipo__img {
+  height: 600px;
+  padding-top: 5%;
+}
+
 /*---Variables---*/
 /*---ID:Beneficios---*/
 #Beneficios .tituloBeneficios {
