@@ -16,6 +16,7 @@ $lettersp1: 1px;
 $lettersp2: $lettersp1 + 1px;
 $bordesred: 10px;
 $bordebf: 1.5px solid $colornj;
+$bordecl: 1.5px solid $colorcl;
 
 
 /*---ID:Nosotros / Quienes Somos---*/
@@ -32,7 +33,7 @@ $bordebf: 1.5px solid $colornj;
 .nosotros {
 
     .nosotros__titulo {
-	    font-size: 40px;
+	    font-size: 2.5rem;
 	    font-weight: $fontw-800;
 	    position: relative;;
 	    bottom: 360px;
@@ -42,7 +43,7 @@ $bordebf: 1.5px solid $colornj;
     }
 
     .nosotros__titulo:hover{
-	    font-size: 40px;
+	    font-size: 2.5rem;
 	    font-weight: $fontw-800;
 	    position: relative;
 	    bottom: 360px;
@@ -62,7 +63,7 @@ $bordebf: 1.5px solid $colornj;
     }
 
     .nosotros__parrafo {
-	    font-size: 17px;
+	    font-size: 1.0625rem;
 	    color: $colorgr;
 	    position: relative;
 	    bottom: 380px;
@@ -74,9 +75,9 @@ $bordebf: 1.5px solid $colornj;
 	margin: 10px auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	width: 1300px;
-	position: absolute;
+    flex-wrap: wrap;
+    position: absolute;
+	width: 100%;
 	bottom: 140px;
 	left: 250px;
 
@@ -96,7 +97,7 @@ $bordebf: 1.5px solid $colornj;
             background-color: $colorcl;
 
             .card__titulo {
-                font-size: 16px;
+                font-size: 1rem;
                 font-weight: $fontw-700;
                 padding-top: 25px;
                 text-align: center;
@@ -108,7 +109,7 @@ $bordebf: 1.5px solid $colornj;
         }
 
         .card__parrafo {
-            font-size: 13px;
+            font-size: 0.8125rem;
             font-weight: $fontw-500;
             padding-top: 20px;
             text-align: center;
@@ -128,7 +129,7 @@ $bordebf: 1.5px solid $colornj;
     box-sizing: content-box;
 }
 
-/*---Sección: Equipo---*/
+/*---HTML: Equipo---*/
 
 #nuestroEquipo {
     padding-top: 2%;
@@ -138,6 +139,7 @@ $bordebf: 1.5px solid $colornj;
 
 .container {
     margin-left: 15%;
+    width: 100% !important;
 }
 
 .equipo {
@@ -149,19 +151,21 @@ $bordebf: 1.5px solid $colornj;
         
             .equipo__titulo {
                 font-weight: $fontw-700;
-                font-size: 36px;
+                font-size: 2.25rem;
                 color: $colorbc;
                 padding-bottom: 4%;
-                padding-top: 18%;
+                padding-top: 17%;
                 margin-left: 3%;
                 line-height: 1.3;
             }
         
             .equipo__parrafo {
-                font-size: 18px;
+                display: inline-block;
+                font-size: 1rem;
                 font-weight: $fontw-400;
-                margin-left: 18%;
-                padding-top: 2.3%;
+                margin-left: 5%;
+                margin-right: 8%;
+                padding-top: 2%;
                 padding-bottom: 2%;
                 color: $colorbc;
             }
@@ -169,8 +173,7 @@ $bordebf: 1.5px solid $colornj;
             .equipo__icono {
                 margin-left: 10%;
                 padding-top: 1.5%;
-                width: 36px;
-                float: left;
+                width: 38px;
             }
         }
 
@@ -179,7 +182,326 @@ $bordebf: 1.5px solid $colornj;
             .equipo__img{
                 height: 600px;
                 padding-top: 5%;
+                padding-left: 5%;
             }
         }
     }  
+}
+
+/*---HTML: Misión---*/
+
+.tituloMisión {
+
+    .pilares {
+        font-size: 1.5rem;
+        font-weight: $fontw-600;
+        text-align: center;
+        padding: 3% 0% 4% 0%;
+        color: $colorvl;
+    }
+
+    .tresContenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    
+        .tres {
+            background: $colorvl;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: $bordesred;
+            margin: 25px;
+            width: 20%;
+            height: 450px;
+    
+            .tres__cuadrado {
+                height: 43%;
+                width: 100%;
+                border-radius: 10px 10px 0px 0px;
+                background-color: $colorbc;
+    
+                .tres__character--uno {
+                    width: 157px;
+                    padding: 5% 30% 0% 30%;
+                }
+    
+                .tres__character--dos {
+                    width: 92px;
+                    padding: 5% 38% 0% 38%;
+                }
+    
+                .tres__character--tres {
+                    width: 108px;
+                    padding: 5% 36% 0% 36%;
+                }
+    
+                .tres__titulo {
+                    font-size: 1.2rem;
+                    font-weight: $fontw-700;
+                    padding-top: 12%;
+                    padding-bottom: 10%;
+                    text-align: center;
+                    letter-spacing: $lettersp1;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: $colorbc;
+                }
+            }
+    
+            .tres__parrafo {
+                font-size: 0.8125rem;
+                font-weight: 200;
+                padding: 35% 10% 10% 10%;
+                text-align: center;
+                color: $colorbc;
+            }
+        }
+    }
+    
+    *, ::after, ::before {
+        box-sizing: content-box;
+    }
+}
+
+/*---HTML: Visión---*/
+
+.tarjetasVision {
+    margin: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.border-primary {
+    border: $bordecl !important;
+}
+
+.mb-3 {
+    margin: 2% !important;
+}
+
+.card-header {
+    font-size: 0.8rem;
+    border-bottom: $bordecl;
+}
+
+.card-title {
+    font-size: $fontw-600;
+    color: $colorcl !important;
+}
+
+.card_hover:hover {
+    background-color: $colornj;
+    border: 1.5px solid #FFFFFF !important;
+
+    .card-header {
+        color: $colorbc;
+        border-bottom: 1.5px solid #FFFFFF;
+    }
+    
+    .card-title {
+        font-size: $fontw-600;
+        color: $colorbc !important;
+    }
+
+    .card-text {
+        color: $colorbc !important;
+    }
+}
+
+
+/*------------------- Media Query Tablet -------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    #Nosotros {
+        padding-bottom: 80px;
+    
+        img {
+            width: 100%;
+            margin-top: 10%;
+        }
+    }
+    
+    .nosotros {
+    
+        .nosotros__titulo {
+            font-size: 2.3rem;
+            bottom: 80px;
+        }
+    
+        .nosotros__titulo:hover{
+            font-size: 2.3rem;
+            bottom: 80px;
+        }
+    
+        .nosotros__parrafo {
+            font-size: 0.9rem;
+            bottom: 90px;
+        }
+    }
+    
+    .cardsContenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 1px;
+    
+        .card {
+            background: $colorbc;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: $bordesred;
+            padding: 40px;
+            margin: 25px;
+            height: 120px;
+            width: 300px;
+    
+            .card__rectangulo {
+                width: 300px;
+                height: 75px;
+                border-radius: $bordesred;
+                background-color: $colorcl;
+    
+                .card__titulo {
+                    font-size: 1rem;
+                    font-weight: $fontw-700;
+                    padding-top: 25px;
+                    text-align: center;
+                    letter-spacing: $lettersp1;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $colorbc;
+                }
+            }
+    
+            .card__parrafo {
+                font-size: 0.8125rem;
+                font-weight: $fontw-500;
+                padding-top: 15px;
+                text-align: center;
+                color: $colorcl;
+            }
+        }
+    }
+    
+    .card__rectangulo:hover{
+        width: 300px;
+        height: 75px !important;
+        border-radius: $bordesred;
+        background-image: linear-gradient(160deg, $colorcl 0%, $colornj 100%);
+    }
+    
+    *, ::after, ::before {
+        box-sizing: content-box;
+    }
+    
+    /*---Sección: Equipo---*/
+    
+    #nuestroEquipo {
+        padding-top: 2%;
+        padding-bottom: 5%;
+        background-color: $colorcl;
+    }
+    
+    .container {
+        margin-left: 15%;
+    }
+    
+    .equipo {
+    
+        .equipo__contenedor {
+            flex-wrap: nowrap;
+    
+            .equipo__contenedor--izquierda {
+            
+                .equipo__titulo {
+                    font-weight: $fontw-700;
+                    font-size: 2.25rem;
+                    color: $colorbc;
+                    padding-bottom: 4%;
+                    padding-top: 18%;
+                    margin-left: 3%;
+                    line-height: 1.3;
+                }
+            
+                .equipo__parrafo {
+                    font-size: 1.125rem;
+                    font-weight: $fontw-400;
+                    margin-left: 18%;
+                    padding-top: 2.3%;
+                    padding-bottom: 2%;
+                    color: $colorbc;
+                }
+            
+                .equipo__icono {
+                    margin-left: 10%;
+                    padding-top: 1.5%;
+                    width: 36px;
+                    float: left;
+                }
+            }
+    
+            .equipo__contenedor--derecha {
+    
+                .equipo__img{
+                    height: 600px;
+                    padding-top: 5%;
+                }
+            }
+        }  
+    }
+}
+
+/*------------------- Media Query Tablet - HTML Equipo -------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    
+    .equipo {
+    
+        .equipo__contenedor {
+            flex-wrap: wrap;
+    
+            .equipo__contenedor--izquierda {
+                width: 100%;
+            
+                .equipo__titulo {
+                    margin-left: 20%;
+                    margin-bottom: 7%;
+                }
+            
+                .equipo__parrafo {
+                    font-size: 1rem;
+                    margin-left: 30%;
+                    display: block;
+                }
+            
+                .equipo__icono {
+                    margin-left: 20%;
+                }
+            }
+    
+            .equipo__contenedor--derecha {
+                margin-left: 30%;
+            }
+        }  
+    }
+}
+
+/*------------------- Media Query Tablet - HTML Misión --------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .tituloMisión {
+    
+        .tresContenedor {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+            
+    }
 }
