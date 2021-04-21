@@ -1,321 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Fusbank | Tu billetera virtual con máxima seguridad</title>
-	<meta name="description" content="Somos una billetera virtual con una tarjeta Visa sin costo para manejar tu dinero desde donde estés.">
-	<meta name="keywords" content="BANCO, BILLETERA, TARJETA, SEGURIDAD, APP, TRANSFERENCIAS">
-	
-	<!-------Bootstrap------>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-------Mi CSS------>
-	<link rel="stylesheet" href="./scss/style.css"/>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <!-------Menú------>
-	<header class="contenedor">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fusbank | Tu billetera virtual con máxima seguridad</title>
+		<meta name="description" content="Somos una billetera virtual con una tarjeta Visa sin costo para manejar tu dinero desde donde estés.">
+		<meta name="keywords" content="BANCO, BILLETERA, TARJETA, SEGURIDAD, APP, TRANSFERENCIAS">
 		
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<h2 class="tituloNavegacion">Fusbank</h2>
-			<div class="container-fluid">
-			  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-			  	</button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#Nosotros" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							¿Quiénes somos?
+		<!-------Bootstrap------>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<!-------Mi CSS------>
+		<link rel="stylesheet" href="./scss/style.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-------Menú------>
+		<header class="contenedor">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<h2 class="tituloNavegacion">Fusbank</h2>
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#Nosotros" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								¿Quiénes somos?
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<li><a class="dropdown-item" href="equipo.html">Equipo</a></li>
+									<li><a class="dropdown-item" href="mision.html">Misión</a></li>
+									<li><a class="dropdown-item" href="vision.html">Visión</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#Beneficios">Beneficios</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#Ayuda">Ayuda</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#solicitarTarjeta">Solicitá tu tarjeta</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#Contacto">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="mensaje">
+				<h4 class="mensaje__antetitulo">Somos tu billetera</h4>
+				<h1 class="mensaje__titulo">Tu seguridad como prioridad.</h1>
+				<p class="mensaje__subtitulo">Bajate nuestra App y empezá a disfrutar.</p>
+				<div class="mensaje__cta">
+					<button class="btn btn-primary"> 
+						<a href="#solicitarTarjeta">¡Lo Quiero!</a>
+					</button>
+				</div>
+			</div>
+			<div class="visual">
+				<img src="./img/iPhone_Mockup1.png" alt="TarjetaDeCredito" class="visual__img"></img>
+			</div>
+		</header>
+
+		<!-------Introducción------>
+		<section id="Introduccion">
+			<div class="intro">
+				<h3 class="intro__titulo">Somos tu billetera de confianza</h3>
+				<p class="intro__parrafo">Sin costos. Sin letra chica. Atención personalizada.</p>
+			</div>
+		</section>
+
+		<!--Sección 1: ¿Quiénes somos?-->
+		<section id="Nosotros"> 
+			<img src="./img/LandscapeMobile.png" alt="Celular"></img>
+
+			<div class="nosotros">
+				<h3 class="nosotros__titulo">¿Quiénes Somos?</h3>
+				<p class="nosotros__parrafo">Venimos a cambiar la forma en la que te relacionas con tu billetera.</p>
+			</div>
+
+			<!--Cards-->
+			<div class="cardsContenedor">
+				<div class="card"> 
+					<div class="card__rectangulo">
+						<h4 class="card__titulo" id="Equipo">
+							<a href="equipo.html" class="card__titulo">Equipo</a>
+						</h4>
+					</div>
+					<p class="card__parrafo">Somos Fusbank.</p>
+				</div>
+				<div class="card"> 
+					<div class="card__rectangulo">
+						<h4 class="card__titulo" id="Misión">
+							<a href="mision.html" class="card__titulo">Misión</a>
+						</h4>
+					</div>
+					<p class="card__parrafo">Nuestra razón de ser.</p>
+				</div>
+				<div class="card"> 
+					<div class="card__rectangulo">
+						<h4 class="card__titulo" id="Visión">
+							<a href="vision.html" class="card__titulo">Visión</a>
+						</h4>
+					</div>
+					<p class="card__parrafo">Hacia dónde vamos.</p>
+				</div>
+			</div>
+		</section>
+
+		<!--Sección 2: Beneficios-->
+		<section id="Beneficios"> 
+			<h3 class="tituloBeneficios">Beneficios</h3>
+			<div class="grilla">
+				<!--Apertura de Cuenta-->
+				<div class="grilla__celda--cuenta">
+					<img src="./icon/002-bank-statement.svg" alt="Piggy Bank" class="grilla__icon"></img>
+					<h4 class="grilla__titulo">Apertura de Cuenta</h4>
+					<p class="grilla__detalle">Tu cuenta no tiene costo alguno. Podrás abrirla desde la App en unos minutos y con tu DNI a mano, donde sea que estés.</p>
+				</div>
+				<!--Mantenimiento-->
+				<div class="grilla__celda--mantenimiento">
+					<img src="./icon/005-money-bag.svg" alt="Piggy Bank" class="grilla__icon"></img>
+					<h4 class="grilla__titulo">Mantenimiento</h4>
+					<p class="grilla__detalle">No cobramos por el mantenimiento de tu cuenta, es decir, no vas a pagar nada la misma tenga o no movimientos.</p>
+					<p class="grilla__detalle">Así uses o no tu tarjeta, no te vamos a cobrar. Sin letra chica.</p>
+				</div>
+				<!--Transferencias-->
+				<div class="grilla__celda--transferencia">
+					<img src="./icon/010-wallet-passes-app.svg" alt="Piggy Bank" class="grilla__icon"></img>
+					<h4 class="grilla__titulo">Transferencias</h4>
+					<p class="grilla__detalle">Podes transferir de forma inmediata y sin costo a cualquier persona las 24 horas y los 365 días del año.</p>
+				</div>
+				<!--Extracción en Cajeros-->
+				<div class="grilla__celda--cajero">
+					<img src="./icon/001-piggy-bank.svg" alt="Piggy Bank" class="grilla__icon"></img>
+					<h4 class="grilla__titulo">Extracción en Cajeros</h4>
+					<p class="grilla__detalle">Con nuestra tarjeta Visa vas a poder retirar tu dinero de cualquier cajero automático del país sin costo alguno.</p>
+					<br>
+					<p class="grilla__detalle">Además, podrás comprar online en cualquier plataforma y hasta pagar Netflix, Spotify u otros servicios que tengas.</p>
+					<br>
+					<p class="grilla__detalle">Sólo deberás abonar USD 5 si quieres extraer dinero desde el exterior.</p>
+				</div>
+				<!--Tarjeta de Débito-->
+				<div class="grilla__celda--débito"> 
+					<img src="./icon/001-credit-card.svg" alt="Piggy Bank" class="grilla__icon"></img>
+					<h4 class="grilla__titulo">Tarjeta de Débito</h4>
+					<p class="grilla__detalle">Nuestra tarjeta Visa Fusbank no tiene ningún costo de entrega ni de mantenimiento.</p>
+				</div>
+				<!--Pago de Servicios-->
+				<div class="grilla__celda--servicio"> 
+					<img src="./icon/006-money-1.svg" alt="Piggy Bank" class="grilla__icon"></img>
+					<h4 class="grilla__titulo">Pago de Servicios</h4>
+					<p class="grilla__detalle">No te cobraremos ningún tipo de comisión o recargo por los pagos de tus servicios.</p>
+				</div>
+			</div>
+		</section>
+
+		<!--Sección 3: Ayuda-->
+		<section id="Ayuda">
+			<div class="preguntas">
+				<h3 class="preguntas__titulo">¿Tenés alguna duda?</h3>
+				<p class="preguntas__parrafo">Estamos para ayudarte en todo lo que necesites, no dudes en escribirnos.</p>
+				<div class="mensaje__cta">
+					<button class="btn btn-primary"> 
+						<a href="ayuda.html">Preguntas Frecuentes</a>
+					</button>
+				</div>
+			</div>
+		</section>	
+
+		<!--Sección 4: Solicitar Tarjeta-->
+		<section id="solicitarTarjeta">
+			<div class="container tarjeta">
+				<div class="row tarjeta__contenedor">
+					<div class="col-md-7 tarjeta__contenedor--izquierda">
+						<h3 class="tarjeta__titulo">Descargá la App para solicitar tu Fusbank</h3>
+						<p class="tarjeta__parrafo">Registrate completando un simple formulario desde nuestra App.</p>
+						<div class="tarjeta__boton">
+							<a href="https://play.google.com/store?hl=es_AR&gl=US">
+								<img src="./img/google-play-badge-bb.svg" alt="Android App" class="tarjeta__boton--descarga"></img>
 							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						  		<li><a class="dropdown-item" href="equipo.html">Equipo</a></li>
-						  		<li><a class="dropdown-item" href="mision.html">Misión</a></li>
-						  		<li><a class="dropdown-item" href="vision.html">Visión</a></li>
-							</ul>
-						</li>
-				  		<li class="nav-item">
-							<a class="nav-link" href="#Beneficios">Beneficios</a>
-				  		</li>
-				  		<li class="nav-item">
-							<a class="nav-link" href="#Ayuda">Ayuda</a>
-				 		</li>
-				  		<li class="nav-item">
-							<a class="nav-link" href="#solicitarTarjeta">Solicitá tu tarjeta</a>
-				  		</li>
-				  		<li class="nav-item">
-							<a class="nav-link" href="#Contacto">Contacto</a>
-				  		</li>
+							<a href="https://www.apple.com/la/app-store/">
+								<img src="./img/badge-apple-store.svg" alt="Apple App" class="tarjeta__boton--descarga"></img>
+							</a>
+						</div>	
+					</div>
+					<div class="col-md-5 tarjeta__contenedor--derecha">
+						<img src="./img/iPhone_left.svg" alt="Iphone App" class="tarjeta__img"></img>
+					</div>
+				</div>
+			</div>
+		</section>	
+
+		<!--Sección 5: Contacto-->
+		<section id="Contacto">
+			<h3 class="Contactanos">Contactanos</h3>
+			<!--Formulario-->
+			<div class="Formulario">
+			<form action="contacto.php" method="get">
+				<!--Nombre-->
+				<div class="form-group">
+					<label for="formGroupExampleInput" class="detalleForm">Nombre</label>
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Fus">
+				</div>
+				<!--Apellido-->
+				<div class="form-group">
+					<label for="formGroupExampleInput">Apellido</label>
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Bank">
+				</div>
+				<!--Mail-->
+				<div class="form-group">
+					<label for="formGroupExampleInput">Email</label>
+					<input type="email" class="form-control" id="formGroupExampleInput" placeholder="fusbank@tumail.com">
+				</div>
+				<!--Asunto-->
+				<div class="form-group Asunto">
+					<label for="formGroupExampleInput">Asunto</label>
+				</div>
+				<select class="form-select" aria-label="Default select example">
+					<option selected>Seleccionar asunto</option>
+					<option value="1">Atención al Cliente</option>
+					<option value="2">Prensa</option>
+					<option value="3">RRHH</option>
+				</select>
+				<!--Mensaje-->
+				<div class="mb-3 form-group">
+					<label for="exampleFormControlTextarea1" class="form-label">Escribinos tu consulta</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+				</div>
+				<!--Checkbox TyC-->
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+					<label class="form-check-label" for="flexCheckDefault">
+					Acepto los Términos y Condiciones
+					</label>
+				</div>
+				<!--Switch Novedades-->
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+					<label class="form-check-label" for="flexSwitchCheckDefault">Recibir novedades de Fusbank en mi email</label>
+				</div>
+				<!--Botones-->
+				<div class="Botones">
+					<input class="btn btn-primary" type="submit" value="Enviar Consulta"/>
+					<input class="btn btn-secondary" type="reset" value="Limpiar"/>
+				</div>
+			</form>
+			</div> 
+		</section>
+
+		<!--Footer-->
+		<footer> 
+			<div class="footerContenedor">
+				<!--Navegación-->
+				<div class="columna">
+					<ul class="columna__lista">
+						<h6 class="columna__titulo">Navegación</h6>
+						<li class="columna__item"><a href="#Equipo" class="columna__item--link">¿Quiénes somos?</a></li>
+						<li class="columna__item"><a href="#Beneficios" class="columna__item--link">Beneficios</a></li>
+						<li class="columna__item"><a href="#Ayuda" class="columna__item--link">Ayuda</a></li>
+						<li class="columna__item"><a href="#solicitarTarjeta" class="columna__item--link">Solicitar Tarjeta</a></li>
+						<li class="columna__item"><a href="#Contacto" class="columna__item--link">Contacto</a></li>
 					</ul>
 				</div>
-			</div>
-		</nav>
-		<br>
-		<div class="mensaje">
-			<h4 class="mensaje__antetitulo">Somos tu billetera</h4>
-			<h1 class="mensaje__titulo">Tu seguridad como prioridad.</h1>
-			<p class="mensaje__subtitulo">Bajate nuestra App y empezá a disfrutar.</p>
-            
-            <div class="mensaje__cta">
-				<button class="btn btn-primary"> 
-					<a href="#solicitarTarjeta">¡Lo Quiero!</a>
-				</button>
-            </div>
-		</div>
-
-		<div class="visual">
-			<img src="./img/iPhone_Mockup1.png" alt="TarjetaDeCredito" class="visual__img"></img>
-		</div>
-	</header>
-
-	<section id="Introduccion">
-		<div class="intro">
-			<h3 class="intro__titulo">Somos tu billetera de confianza</h3>
-			<p class="intro__parrafo">Sin costos. Sin letra chica. Atención personalizada.</p>
-		</div>
-	</section>
-
-    <!--Sección 2: ¿Quiénes somos?-->
-	<section id="Nosotros"> 
-		<img src="./img/LandscapeMobile.png" alt="Celular"></img>
-
-		<div class="nosotros">
-			<h3 class="nosotros__titulo">¿Quiénes Somos?</h3>
-			<p class="nosotros__parrafo">Venimos a cambiar la forma en la que te relacionas con tu billetera.</p>
-		</div>
-
-		<!-- Cards -->
-		<div class="cardsContenedor">
-			<div class="card"> 
-				<div class="card__rectangulo">
-					<h4 class="card__titulo" id="Equipo">
-						<a href="equipo.html" class="card__titulo">Equipo</a>
-					</h4>
+				<!--Legales-->
+				<div class="columna">
+					<ul class="columna__lista">
+						<h6 class="columna__titulo">Legales</h6>
+						<li class="columna__item"><a href="https://www.bcra.gob.ar/BCRAyVos/Regimen_de_transparencia.asp" class="columna__item--link">Régimen de transparencia</a></li>
+						<li class="columna__item"><a href="https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp" class="columna__item--link">Usuario Bancario</a></li>
+						<li class="columna__item">Código de Conducta</li>
+						<li class="columna__item">Información al usuario financiero</li>
+						<li class="columna__item">Código de Gobierno Societario</li>
+						<li class="columna__item">Estados contables</li>
+						<li class="columna__item">FATCA</li>
+						<li class="columna__item">Términos y condiciones</li>
+					</ul>
 				</div>
-				<p class="card__parrafo">Somos Fusbank.</p>
-			</div>
-
-			<div class="card"> 
-				<div class="card__rectangulo">
-					<h4 class="card__titulo" id="Misión">
-						<a href="mision.html" class="card__titulo">Misión</a>
-					</h4>
+				<!--Usuarios Financieros-->
+				<div class="columna">
+					<ul class="columna__lista">
+						<li class="columna__item--usuarios">
+							<a href="http://www.usuariosfinancieros.gob.ar">
+								<img src="img/usuariosfinancieros.png" width="210px">
+							</a>
+						</li>
+					</ul>
 				</div>
-				<p class="card__parrafo">Nuestra razón de ser.</p>
+				<!--RRSS-->
+				<div class="columna">
+					<ul class="columna__lista--redes">
+						<li class="columna__item">
+							<img src="icon/facebook.svg" class="facebook__icon">
+						</li>
+						<li class="columna__item">
+							<img src="icon/instagram.svg" class="instagram__icon">
+						</li>
+						<li class="columna__item">
+							<img src="icon/twitter.svg" class="twitter__icon">
+						</li>
+					</ul>
+				</div> 
 			</div>
+			<p class="footer__parrafo"><strong>FUSBANK</strong> Agente de Liquidación y Compensación – Propio. Comisión Nacional de Valores: nro. de matrícula 1417.</p>
+		</footer>   
 
-			<div class="card"> 
-				<div class="card__rectangulo">
-					<h4 class="card__titulo" id="Visión">
-						<a href="vision.html" class="card__titulo">Visión</a>
-					</h4>
-				</div>
-				<p class="card__parrafo">Hacia dónde vamos.</p>
-			</div>
-		</div>
-	</section>
-
-    <!--Sección 3: Beneficios-->
-	<section id="Beneficios"> 
-		<h3 class="tituloBeneficios">Beneficios</h3>
-		
-		<div class="grilla">
-			<div class="grilla__celda--cuenta">
-				<img src="./icon/002-bank-statement.svg" alt="Piggy Bank" class="grilla__icon"></img>
-				<h4 class="grilla__titulo">Apertura de Cuenta</h4>
-				<p class="grilla__detalle">Tu cuenta no tiene costo alguno. Podrás abrirla desde la App en unos minutos y con tu DNI a mano.</p>
-			</div>
-
-			<div class="grilla__celda--mantenimiento">
-				<img src="./icon/005-money-bag.svg" alt="Piggy Bank" class="grilla__icon"></img>
-				<h4 class="grilla__titulo">Mantenimiento</h4>
-				<p class="grilla__detalle">No cobramos por el mantenimiento de tu cuenta, es decir, no vas a pagar nada tenga o no movimientos.</p>
-				<p class="grilla__detalle">Así uses o no tu tarjeta, no te cobraremos. Sin letra chica.</p>
-			</div>
-
-			<div class="grilla__celda--transferencia">
-				<img src="./icon/010-wallet-passes-app.svg" alt="Piggy Bank" class="grilla__icon"></img>
-				<h4 class="grilla__titulo">Transferencias</h4>
-				<p class="grilla__detalle">Podes transferir de forma inmediata y sin costo a cualquier persona las 24 horas y los 365 días del año.</p>
-			</div>
-
-			<div class="grilla__celda--cajero">
-				<img src="./icon/001-piggy-bank.svg" alt="Piggy Bank" class="grilla__icon"></img>
-				<h4 class="grilla__titulo">Extracción en Cajeros</h4>
-				<p class="grilla__detalle">Con nuestra tarjeta Visa vas a poder retirar tu dinero de cualquier cajero automático del país sin costo alguno.</p>
-				<br>
-				<p class="grilla__detalle">Además, podrás comprar online en cualquier plataforma y hasta pagar Netflix, Spotify u otros servicios que tengas.</p>
-				<br>
-				<p class="grilla__detalle">Sólo deberás abonar USD 5 si quieres extraer dinero desde el exterior.</p>
-			</div>
-
-			<div class="grilla__celda--débito"> 
-				<img src="./icon/001-credit-card.svg" alt="Piggy Bank" class="grilla__icon"></img>
-				<h4 class="grilla__titulo">Tarjeta de Débito</h4>
-				<p class="grilla__detalle">Nuestra tarjeta Visa Fusbank no tiene ningún costo de entrega ni de mantenimiento.</p>
-			</div>
-
-			<div class="grilla__celda--servicio"> 
-				<img src="./icon/006-money-1.svg" alt="Piggy Bank" class="grilla__icon"></img>
-				<h4 class="grilla__titulo">Pago de Servicios</h4>
-				<p class="grilla__detalle">No te cobraremos ningún tipo de comisión o recargo por los pagos de tus servicios.</p>
-			</div>
-		</div>
-	</section>	
-	<br>
-
-    <!--Sección 4: Ayuda-->
-	<section id="Ayuda">
-		<div class="preguntas">
-			<h3 class="preguntas__titulo">¿Tenés alguna duda?</h3>
-			<p class="preguntas__parrafo">Estamos para ayudarte en todo lo que necesites, no dudes en escribirnos.</p>
-			<div class="mensaje__cta">
-				<button class="btn btn-primary"> 
-					<a href="ayuda.html">Preguntas Frecuentes</a>
-				</button>
-            </div>
-		</div>
-	</section>	
-
-    <!--Sección 5: Solicitar Tarjeta-->
-	<section id="solicitarTarjeta">
-		<div class="container tarjeta">
-			<div class="row tarjeta__contenedor">
-				<div class="col-md-7 tarjeta__contenedor--izquierda">
-					<h3 class="tarjeta__titulo">Descargá la App para solicitar tu Fusbank</h3>
-					<p class="tarjeta__parrafo">Registrate completando un simple formulario desde nuestra App.</p>
-					<a href="https://play.google.com/store?hl=es_AR&gl=US">
-						<img src="./img/google-play-badge-bb.svg" alt="Android App" class="tarjeta__boton"></img>
-					</a>
-					<a href="https://www.apple.com/la/app-store/">
-						<img src="./img/badge-apple-store.svg" alt="Apple App" class="tarjeta__boton"></img>
-					</a>
-				</div>
-				<div class="col-md-5 tarjeta__contenedor--derecha">
-					<img src="./img/iPhone_left.svg" alt="Iphone App" class="tarjeta__img"></img>
-				</div>
-			</div>
-		</div>
-	</section>	
-
-    <!--Sección 6: Contacto-->
-	<section id="Contacto">
-		<h3 class="Contactanos">Contactanos</h3>
-		<!--Formulario-->
-		<div class="Formulario">
-		<form action="contacto.php" method="get">
-			<!--Nombre-->
-			<div class="form-group">
-				<label for="formGroupExampleInput" class="detalleForm">Nombre</label>
-				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Fus">
-			</div>
-			<!--Apellido-->
-			<div class="form-group">
-				<label for="formGroupExampleInput">Apellido</label>
-				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Bank">
-			</div>
-			<!--Mail-->
-			<div class="form-group">
-				<label for="formGroupExampleInput">Email</label>
-				<input type="email" class="form-control" id="formGroupExampleInput" placeholder="fusbank@tumail.com">
-			</div>
-			<!--Asunto-->
-			<div class="form-group Asunto">
-				<label for="formGroupExampleInput">Asunto</label>
-			</div>
-			<select class="form-select" aria-label="Default select example">
-				<option selected>Seleccionar asunto</option>
-				<option value="1">Atención al Cliente</option>
-				<option value="2">Prensa</option>
-				<option value="3">RRHH</option>
-			</select>
-			<!--Mensaje-->
-			<div class="mb-3 form-group">
-				<label for="exampleFormControlTextarea1" class="form-label">Escribinos tu consulta</label>
-				<textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
-			</div>
-			<!--Checkbox TyC-->
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-				<label class="form-check-label" for="flexCheckDefault">
-				  Acepto los Términos y Condiciones
-				</label>
-			</div>
-			<!--Switch Novedades-->
-			<div class="form-check form-switch">
-				<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-				<label class="form-check-label" for="flexSwitchCheckDefault">Recibir novedades de Fusbank en mi email</label>
-			</div>
-			<!--Botones-->
-			<div class="Botones">
-				<input class="btn btn-primary" type="submit" value="Enviar Consulta"/>
-				<input class="btn btn-secondary" type="reset" value="Limpiar"/>
-			</div>
-		</form>
-		</div> 
-	</section>
-
-    <!--Sección 7: Footer-->
-	<footer> 
-		<div class="footerContenedor">
-
-			<div class="columna">
-				<ul class="columna__lista">
-					<h6 class="columna__titulo">Navegación</h6>
-					<li class="columna__item"><a href="#Equipo" class="columna__item--link">¿Quiénes somos?</a></li>
-					<li class="columna__item"><a href="#Beneficios" class="columna__item--link">Beneficios</a></li>
-					<li class="columna__item"><a href="#Ayuda" class="columna__item--link">Ayuda</a></li>
-					<li class="columna__item"><a href="#solicitarTarjeta" class="columna__item--link">Solicitar Tarjeta</a></li>
-					<li class="columna__item"><a href="#Contacto" class="columna__item--link">Contacto</a></li>
-				</ul>
-			</div>
-
-			<div class="columna">
-				<ul class="columna__lista">
-					<h6 class="columna__titulo">Legales</h6>
-					<li class="columna__item"><a href="https://www.bcra.gob.ar/BCRAyVos/Regimen_de_transparencia.asp" class="columna__item--link">Régimen de transparencia</a></li>
-					<li class="columna__item"><a href="https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp" class="columna__item--link">Usuario Bancario</a></li>
-					<li class="columna__item">Código de Conducta</li>
-					<li class="columna__item">Información al usuario financiero</li>
-					<li class="columna__item">Código de Gobierno Societario</li>
-					<li class="columna__item">Estados contables</li>
-					<li class="columna__item">FATCA</li>
-					<li class="columna__item">Términos y condiciones</li>
-				</ul>
-			</div>	
-
-			<div class="columna">
-				<ul class="columna__lista">
-					<li class="columna__item--usuarios">
-						<a href="http://www.usuariosfinancieros.gob.ar">
-							<img src="img/usuariosfinancieros.png" width="210px">
-						</a>
-					</li>
-				</ul>
-			</div>	
-
-			<div class="columna">
-				<ul class="columna__lista--redes">
-					<li class="columna__item">
-						<img src="icon/facebook.svg" class="facebook__icon">
-					</li>
-					<li class="columna__item">
-						<img src="icon/instagram.svg" class="instagram__icon">
-					</li>
-					<li class="columna__item">
-						<img src="icon/twitter.svg" class="twitter__icon">
-					</li>
-				</ul>
-			</div> 
-		</div>
-		<p class="footer__parrafo"><strong>FUSBANK</strong> Agente de Liquidación y Compensación – Propio. Comisión Nacional de Valores: nro. de matrícula 1417.</p>
-	</footer>   
-
-	<!--Scripts Bootstrap-->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script> 
-</body>
+		<!--Scripts Bootstrap-->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script> 
+	</body>
 </html>

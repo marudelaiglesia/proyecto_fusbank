@@ -33,7 +33,7 @@ $bordebf: 1.5px solid $colornj;
 	margin-bottom: 10%;
 
     .preguntas__titulo {
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: $fontw-700;
         color: $colorgr;
         padding-bottom: 25px;
@@ -42,7 +42,7 @@ $bordebf: 1.5px solid $colornj;
     }
 
     .preguntas__parrafo {
-        font-size: 18px;
+        font-size: 1.125rem;
         color: $colorgr;
         text-align: center;
     }
@@ -54,7 +54,7 @@ $bordebf: 1.5px solid $colornj;
     
         .btn-primary {
             font-weight: $fontw-500;
-            font-size: 17px;
+            font-size: 1.0625rem;
             padding-left: 3%;
             padding-right: 3%;
             background-color: $colorcl;
@@ -83,7 +83,7 @@ nav {
         padding-top: 2%;
 
         .breadcrumb-item {
-            font-size: 13px;
+            font-size: 0.8125rem;
             font-weight: 200;
         
             a{
@@ -100,7 +100,7 @@ nav {
 
 .tituloAyuda {
     font-family: 'Poppins', sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: $fontw-800;
     letter-spacing: $lettersp2;
     display: flex;
@@ -121,7 +121,7 @@ nav {
 
     .accordion-item{
         font-family: $font;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 100;
         color: $colorgr;
     }
@@ -155,14 +155,14 @@ nav {
         }
 
         .card-title {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: $fontw-600;
             color: $colorgr;
             margin-bottom: 5%;
         }
     
         .card-text {
-            font-size: 13px;
+            font-size: 0.8125rem;
             font-weight: 200;
             color: $colorgr;
             line-height: 1.7;
@@ -204,7 +204,7 @@ nav {
         padding-top: 7%;
 
         .bloque__titular {
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: $fontw-700;
             letter-spacing: $lettersp1;
             text-transform: uppercase;
@@ -213,7 +213,7 @@ nav {
     }
 
     .bloque__parrafo {
-        font-size: 13px;
+        font-size: 0.8125rem;
         font-weight: $fontw-500;
         color: $colorgr;
         padding-left: 5%;
@@ -228,7 +228,7 @@ nav {
     @each $numero, $color in $parrafo-color {
         .bloque__parrafo--#{$numero} {
             color: $color;
-            font-size: 13px;
+            font-size: 0.8125rem;
             font-weight: $fontw-400;
         }
     }
@@ -247,7 +247,7 @@ nav {
     padding-bottom: 10%;
 
     .IrHome {
-        font-size: 12px;
+        font-size: 0.75rem;
         margin-right: 9%;
         margin-top: 4%;
 
@@ -281,13 +281,13 @@ nav {
 			flex-direction: column;
 
 			.columna__titulo {
-				font-size: 15px;
+				font-size: 0.9375rem;
 				font-weight: $fontw-600;
 				color: $colorft;
 			}
 	
 			.columna__item {
-				font-size: 12px;
+				font-size: 0.75rem;
 				font-weight: 300;
 				padding: 4% 8% 4% 8%;	
 				color: $colorft;
@@ -335,11 +335,37 @@ nav {
 footer {
 
 	.footer__parrafo {
-		font-size: 10px;
+		font-size: 0.625rem;
 		font-weight: 100;
 		margin-top: 4%;
 		margin-bottom: 4%;
 		text-align: center;
 		color: $colorgr;
 	}
+}
+
+/*------------------- Media Query Tablet -------------------*/
+
+@media only screen and (max-width: 768px) {
+
+    #Ayuda {
+        width: 100%;
+    }
+    
+    .preguntas {
+        margin-top: 50%;
+        margin-bottom: 30%;
+    
+        .preguntas__titulo {
+            width: 100%;
+        }
+    
+        .preguntas__parrafo {
+            width: 100%;
+        }
+    
+        .mensaje__cta {
+            width: 100%;
+        }
+    }
 }

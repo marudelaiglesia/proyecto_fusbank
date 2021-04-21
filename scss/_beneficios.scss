@@ -23,7 +23,7 @@ $bordebf: 1.5px solid $colornj;
 #Beneficios {
 
     .tituloBeneficios {
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: $fontw-800;
         letter-spacing: $lettersp2;
         display: flex;
@@ -50,12 +50,12 @@ $bordebf: 1.5px solid $colornj;
         .grilla__titulo {
             margin: 30px 30px 25px 30px;
             color: $colorcl;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: $fontw-600;
         }
         
         .grilla__detalle {
-            font-size: 13px;
+            font-size: 0.8125rem;
             margin: 0px 30px 0px 0px;
             padding-left: 30px;
         }
@@ -87,6 +87,7 @@ $bordebf: 1.5px solid $colornj;
             grid-area: cajero;
             border: $bordebf;
             border-radius: $bordesred;
+            height: 324px;
         }
 
         /*-Débitos-*/
@@ -94,6 +95,7 @@ $bordebf: 1.5px solid $colornj;
             grid-area: débito;
             border: $bordebf;
             border-radius: $bordesred;
+            height: 160px;
         }
 
         /*-Servicios-*/
@@ -101,6 +103,7 @@ $bordebf: 1.5px solid $colornj;
             grid-area: servicio;
             border: $bordebf;
             border-radius: $bordesred;
+            height: 160px;
         }
     }
 
@@ -125,4 +128,67 @@ $bordebf: 1.5px solid $colornj;
     }
 }
 
+/*------------------- Media Query Tablet -------------------*/
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    #Beneficios {
+    
+        .grilla {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1.3fr;
+            grid-template-areas: 
+            "cuenta cuenta"
+            "mantenimiento transferencia"
+            "cajero cajero"
+            "débito servicio";
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            padding: 5% 10% 5% 10%;
+    
+            .grilla__titulo {
+                font-size: 1.3rem;
+                line-height: 1.4;
+            }
+    
+            /*-Cuenta-*/
+            .grilla__celda--cuenta {
+                grid-area: cuenta;
+                padding-bottom: 5%;
+            }
+    
+            /*-Mantenimiento-*/
+            .grilla__celda--mantenimiento {
+                grid-area: mantenimiento;
+
+                .grilla__detalle:last-child {
+                    display: none;
+                }                
+            }
+            
+            /*-Transferencias-*/
+            .grilla__celda--transferencia {
+                grid-area: transferencia;
+            }
+            
+            /*-Cajeros-*/
+            .grilla__celda--cajero {
+                grid-area: cajero;
+                height: 260px;
+            }
+    
+            /*-Débitos-*/
+            .grilla__celda--débito {
+                grid-area: débito;
+                height: 200px;
+            }
+    
+            /*-Servicios-*/
+            .grilla__celda--servicio {
+                grid-area: servicio;
+                height: 200px;
+            }
+        }
+    }
+}

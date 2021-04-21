@@ -25,7 +25,7 @@ $bordebf: 1.5px solid $colornj;
 	padding: 70px 20px 100px 20px;
 
     .Contactanos {
-        font-size: 28px !important;
+        font-size: 1.75rem !important;
         font-weight: $fontw-700;
         text-align: center;
         margin: 0;
@@ -44,7 +44,7 @@ $bordebf: 1.5px solid $colornj;
             margin-bottom: 7%;
 
             label {
-                font-size: 14px;
+                font-size: 0.875rem;
                 font-weight: $fontw-500;
                 padding-bottom: 2%;
                 padding-left: 3%;
@@ -53,7 +53,7 @@ $bordebf: 1.5px solid $colornj;
 
             .form-control{
                 border: 1px solid $colorcl;
-                font-size: 14px;
+                font-size: 0.875rem;
             }
         }
 
@@ -64,7 +64,7 @@ $bordebf: 1.5px solid $colornj;
         .form-select {
             border: 1px solid $colorcl;
             width: 95%;
-            font-size: 14px;
+            font-size: 0.875rem;
             margin-bottom: 7%;
         }
 
@@ -80,7 +80,7 @@ $bordebf: 1.5px solid $colornj;
             }
 
             .form-check-label {
-                font-size: 14px;
+                font-size: 0.875rem;
                 font-weight: $fontw-400;
                 margin-bottom: 2%;
                 margin-left: 1%;
@@ -106,7 +106,7 @@ $bordebf: 1.5px solid $colornj;
 
             .btn-primary {
                 font-weight: $fontw-500;
-                font-size: 15px;
+                font-size: 0.9375rem;
                 margin-right: 6%;
                 background-color: $colorcl;
                 border-color: $colorcl;
@@ -119,7 +119,7 @@ $bordebf: 1.5px solid $colornj;
             
             .btn-secondary {
                 font-weight: $fontw-500;
-                font-size: 15px;
+                font-size: 0.9375rem;
                 background-color: $colorbc;
                 color: $colorft;
             }
@@ -132,8 +132,3 @@ $bordebf: 1.5px solid $colornj;
         }
     }
 }
-	
-	
-
-
-

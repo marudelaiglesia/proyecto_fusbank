@@ -29,29 +29,37 @@ $bordebf: 1.5px solid $colornj;
 
     .tarjeta__contenedor {
         flex-wrap: nowrap;
+        margin-left: 6%;
 
         .tarjeta__contenedor--izquierda {
         
             .tarjeta__titulo {
                 font-weight: $fontw-700;
-                font-size: 47px;
+                font-size: 2.9375rem;
                 color: $colorcl;
                 padding-bottom: 2%;
                 padding-top: 35%;
-                margin-left: 4%;
+                margin-left: 5%;
                 line-height: 1.5;
             }
         
             .tarjeta__parrafo {
-                font-size: 15px;
-                margin-left: 4%;
+                font-size: 0.9375rem;
+                margin-left: 5%;
             }
         
             .tarjeta__boton {
-                margin-left: 4%;
-                padding-top: 7%;
-                width: 170px;
-                padding-right: 0;
+
+                a {
+                    text-decoration: none;
+
+                    .tarjeta__boton--descarga {
+                        margin-left: 5%;
+                        padding-top: 7%;
+                        width: 150px;
+                        padding-right: 0;
+                    }
+                }
             }
         }
 
@@ -63,4 +71,64 @@ $bordebf: 1.5px solid $colornj;
             }
         }
     }  
+}
+
+/*------------------- Media Query Tablet -------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .container {
+        margin: 0;
+        width: 90% !important;
+
+        .row {
+            width: 90%;
+        }
+    }
+    
+    .tarjeta {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    
+        .tarjeta__contenedor {
+            flex-wrap: wrap;
+            width: 80%;
+    
+            .tarjeta__contenedor--izquierda {
+            
+                .tarjeta__titulo {
+                    font-size: 2.5rem;
+                    margin-left: 2%;
+                    padding-bottom: 4%;
+                    text-align: center;
+                }
+            
+                .tarjeta__parrafo {
+                    font-size: 1rem;
+                    text-align: center;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+            
+                .tarjeta__boton {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        text-decoration: none;
+                        margin: 10% 3% 10% 3%;
+    
+                        .tarjeta__boton--descarga {
+                            width: 140px;
+                        }
+                    }
+                }
+            }
+    
+            .tarjeta__contenedor--derecha {
+                margin: 0% 2% 0% 2%;
+            }
+        }  
+    }
 }
